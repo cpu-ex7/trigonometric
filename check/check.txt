@@ -1,0 +1,79 @@
+コンパイル・実行方法
+$ ocamlc -c -custom float32.mli
+$ ocamlc -c -custom float32.ml
+$ ocamlc -c -custom float32.c
+$ ocamlc -c -custom trigo_check3.ml
+$ ocamlc -custom -o trigo_check3 float32.o float32.cmo trigo_check3.cmo 
+$ ./trigo_check3
+
+
+結果
+
+ sinのチェック 
+-10 ulp以上  -9 ulp未満 :          0
+ -9 ulp以上  -8 ulp未満 :          0
+ -8 ulp以上  -7 ulp未満 :          0
+ -7 ulp以上  -6 ulp未満 :          0
+ -6 ulp以上  -5 ulp未満 :          0
+ -5 ulp以上  -4 ulp未満 :         50
+ -4 ulp以上  -3 ulp未満 :      31083
+ -3 ulp以上  -2 ulp未満 :     133135
+ -2 ulp以上  -1 ulp未満 :     198038
+ -1 ulp以上   0 ulp未満 :   51526296
+  0 ulp以上   1 ulp未満 : 1002602438
+  1 ulp以上   2 ulp未満 :    1799916
+  2 ulp以上   3 ulp未満 :     673653
+  3 ulp以上   4 ulp未満 :          0
+  4 ulp以上   5 ulp未満 :          0
+  5 ulp以上   6 ulp未満 :          0
+  6 ulp以上   7 ulp未満 :          0
+  7 ulp以上   8 ulp未満 :          0
+  8 ulp以上   9 ulp未満 :          0
+  9 ulp以上  10 ulp未満 :          0
+
+ cosのチェック 
+-10 ulp以上  -9 ulp未満 :          0
+ -9 ulp以上  -8 ulp未満 :          0
+ -8 ulp以上  -7 ulp未満 :          0
+ -7 ulp以上  -6 ulp未満 :          0
+ -6 ulp以上  -5 ulp未満 :          0
+ -5 ulp以上  -4 ulp未満 :          0
+ -4 ulp以上  -3 ulp未満 :       4592
+ -3 ulp以上  -2 ulp未満 :      81365
+ -2 ulp以上  -1 ulp未満 :     161183
+ -1 ulp以上   0 ulp未満 :   49499361
+  0 ulp以上   1 ulp未満 : 1003489354
+  1 ulp以上   2 ulp未満 :    2142105
+  2 ulp以上   3 ulp未満 :    1538485
+  3 ulp以上   4 ulp未満 :      48164
+  4 ulp以上   5 ulp未満 :          0
+  5 ulp以上   6 ulp未満 :          0
+  6 ulp以上   7 ulp未満 :          0
+  7 ulp以上   8 ulp未満 :          0
+  8 ulp以上   9 ulp未満 :          0
+  9 ulp以上  10 ulp未満 :          0
+
+ atanのチェック 
+-10 ulp以上  -9 ulp未満 :          0
+ -9 ulp以上  -8 ulp未満 :          0
+ -8 ulp以上  -7 ulp未満 :          0
+ -7 ulp以上  -6 ulp未満 :          0
+ -6 ulp以上  -5 ulp未満 :          0
+ -5 ulp以上  -4 ulp未満 :          0
+ -4 ulp以上  -3 ulp未満 :          0
+ -3 ulp以上  -2 ulp未満 :          0
+ -2 ulp以上  -1 ulp未満 :       8817
+ -1 ulp以上   0 ulp未満 :   77041374
+  0 ulp以上   1 ulp未満 : 2052360429
+  1 ulp以上   2 ulp未満 :    1202479
+  2 ulp以上   3 ulp未満 :      93334
+  3 ulp以上   4 ulp未満 :          0
+  4 ulp以上   5 ulp未満 :          0
+  5 ulp以上   6 ulp未満 :          0
+  6 ulp以上   7 ulp未満 :          0
+  7 ulp以上   8 ulp未満 :          0
+  8 ulp以上   9 ulp未満 :          0
+  9 ulp以上  10 ulp未満 :          0
+
+
+

@@ -4,6 +4,9 @@ $ make
 実行方法 
 $ ./trigo_check3
 
+説明
+sin,cosは、0以上1未満の単精度浮動小数点数Aに対して、trigonometricのsin,cosとocamlのsin,cosの差を計算した。ocaml_sin(A),ocaml_cos(A)のulpの何倍分かで誤差を表した。(引数が負の場合は正に、そして任意の正の場合はreductionで[0,pi/.4.0]に帰着されるのでこれで十分)
+atanは、0以上の単精度浮動小数点数Aに対して、trigonometricのatanとocamlのatanの差を計算した。ocaml_atan(A)のulpの何倍分かで誤差を表した。(引数が負の場合は正に帰着されるのでこれで十分)
 
 結果
 
